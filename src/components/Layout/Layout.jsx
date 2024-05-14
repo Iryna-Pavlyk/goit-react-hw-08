@@ -1,11 +1,12 @@
 import css from "./Layout.module.css";
-import Navigation from "../../components/Navigation/Navigation";
+import AppBar from "../../components/AppBar/AppBar";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <>
       <h3 className={css}>Layout</h3>
-      <Navigation />
+      <AppBar />
+      {children}
     </>
   );
 };
