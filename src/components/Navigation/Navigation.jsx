@@ -7,7 +7,7 @@ const Navigation = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return (
-    <div className={css.wrap}>
+    <nav className={css.wrap}>
       <NavLink className={css.link} to="/">
         Home
       </NavLink>
@@ -16,7 +16,7 @@ const Navigation = () => {
           Contacts
         </NavLink>
       )}
-    </div>
+    </nav>
   );
 };
 
