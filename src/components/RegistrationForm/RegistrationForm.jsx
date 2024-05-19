@@ -1,10 +1,35 @@
+import { Field, Form, Formik } from "formik";
 import css from "./RegistrationForm.module.css";
 
 const RegistrationForm = () => {
   return (
-    <>
-      <h3 className={css}>RegistrationForm</h3>
-    </>
+    <Formik
+      initialValues={{
+        name: "",
+        email: "",
+        password: "",
+      }}
+      onSubmit={() => {}}
+    >
+      <Form>
+        <label>
+          Name
+          <Field className={css.input} type="text" name="name" />
+        </label>
+
+        <label>
+          Email
+          <Field className={css.input} type="email" name="email" />
+        </label>
+
+        <label>
+          Password
+          <Field className={css.input} type="password" name="password" />
+        </label>
+
+        <button type="submit">Register</button>
+      </Form>
+    </Formik>
   );
 };
 

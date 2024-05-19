@@ -11,7 +11,7 @@ const authSlice = createSlice({
     isLoggedIn: null,
     isRefreshing: false,
   },
-  extraReducers: (builder) => builder.addCase(),
+  // extraReducers: (builder) => builder.addCase(),
 });
 
 export default authSlice.reducer;

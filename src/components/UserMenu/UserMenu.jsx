@@ -2,9 +2,12 @@ import css from "./UserMenu.module.css";
 
 const UserMenu = () => {
   return (
-    <>
-      <h3 className={css}>UserMenu</h3>
-    </>
+    <div className={css.wrap}>
+      <p>Welcome, </p>
+      <button type="button" onClick={() => {}}>
+        Logout
+      </button>
+    </div>
   );
 };
 

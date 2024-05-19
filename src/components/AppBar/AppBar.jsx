@@ -1,14 +1,13 @@
 import css from "./AppBar.module.css";
 import Navigation from "../../components/Navigation/Navigation";
-import AuthNav from "../../components/AuthNav/AuthNav";
-import UserMenu from "../../components/UserMenu/UserMenu";
+// import AuthNav from "../../components/AuthNav/AuthNav";
+// import UserMenu from "../../components/UserMenu/UserMenu";
 
 const AppBar = () => {
   return (
-    <header>
-      <h3 className={css}>AppBar</h3>
+    <header className={css.header}>
       <Navigation />
-      {<UserMenu /> || <AuthNav />}
+      {/* {<UserMenu /> || <AuthNav />} */}
     </header>
   );
 };

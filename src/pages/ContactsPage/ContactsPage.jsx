@@ -1,9 +1,11 @@
+import ContactForm from "../../components/ContactForm/ContactForm";
 import css from "./ContactsPage.module.css";
 
 const ContactsPage = () => {
   return (
     <>
-      <h3 className={css}>ContactsPage</h3>
+      <h3 className={css}>My contacts</h3>
+      <ContactForm />
     </>
   );
 };
