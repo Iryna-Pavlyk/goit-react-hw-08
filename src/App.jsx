@@ -28,7 +28,7 @@ const App = () => {
     <Layout>
       <Suspense fallback={null}>
         <Routes>
-          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/" element={<Homepage />} />
           <Route
             path="/register"
             element={
@@ -37,7 +37,7 @@ const App = () => {
                 redirectTo="/"
               />
             }
-          ></Route>
+          />
           <Route
             path="/login"
             element={
@@ -46,13 +46,13 @@ const App = () => {
                 redirectTo="/contacts"
               />
             }
-          ></Route>
+          />
           <Route
             path="/contacts"
             element={
               <PrivateRoute component={<ContactsPage />} redirectTo="/login" />
             }
-          ></Route>
+          />
         </Routes>
       </Suspense>
     </Layout>
