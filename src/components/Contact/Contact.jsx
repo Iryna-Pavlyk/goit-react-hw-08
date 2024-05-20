@@ -11,12 +11,12 @@ const Contact = ({ item: { name, number, id } }) => {
   return (
     <div className={css.wrapper}>
       <div>
-        <h2>
-          <MdPeopleAlt color="#2196f3" size={22} />
+        <p className={css.name}>
+          <MdPeopleAlt className={css.icon} size={26} />
           {name}
-        </h2>
+        </p>
         <p className={css.text}>
-          <MdOutlinePhoneInTalk color="#2196f3" size={22} />
+          <MdOutlinePhoneInTalk className={css.icon} size={26} />
           {number}
         </p>
       </div>

@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div className={css.wrap}>
       <AppBar />
-      {children}
+      <section className={css.section}>{children}</section>
     </div>
   );
 };

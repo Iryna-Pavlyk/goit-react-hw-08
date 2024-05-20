@@ -24,9 +24,9 @@ const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <p className={css.container}>Please wait...</p>
+    <p>Please wait...</p>
   ) : (
-    <Layout className={css.container}>
+    <Layout>
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<HomePage />} />

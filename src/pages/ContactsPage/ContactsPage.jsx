@@ -17,10 +17,11 @@ const ContactsPage = () => {
 
   return (
     <>
-      <h3 className={css}>My contacts</h3>
+      <h3 className={css.title}>Add contact</h3>
       <ContactForm />
       <SearchBox />
       {isLoading && <p>Request in progress...</p>}
+      <h3 className={css.title}>My contacts</h3>
       <ContactList />
     </>
   );
