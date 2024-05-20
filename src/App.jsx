@@ -4,6 +4,7 @@ import Layout from "./components/Layout/Layout";
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsRefreshing } from "./redux/auth/selectors";
 import { refreshUser } from "./redux/auth/operations";
+import css from "./App.module.css";
 import RestrictedRoute from "./components/RestrictedRoute/RestrictedRoute";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
@@ -23,9 +24,9 @@ const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <p>Please wait...</p>
+    <p className={css.container}>Please wait...</p>
   ) : (
-    <Layout>
+    <Layout className={css.container}>
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<HomePage />} />
