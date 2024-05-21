@@ -5,7 +5,6 @@
   -webkit-box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
   box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
-  width: 400px;
   height: 100%;
   font-size: 16px;
   padding: 10px 10px 10px 15px;
@@ -14,4 +13,21 @@
 .input:focus,
 :hover {
   outline: transparent;
+}
+
+@media screen and (min-width: 320px) {
+  .input {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .input {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input {
+    width: 400px;
+  }
 }
