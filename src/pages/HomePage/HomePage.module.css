@@ -1,0 +1,53 @@
+.title {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+.titleRed {
+  color: rgba(253, 29, 29, 1);
+}
+.titleOrange {
+  color: rgb(249, 160, 36);
+}
+
+.titleViolet {
+  color: rgba(131, 58, 180, 1);
+}
+.title span {
+  transition: 0.5s ease-out;
+}
+.title:hover span:nth-child(1) {
+  margin-right: 20px;
+}
+.title:hover span:nth-child(1):after {
+  content: "";
+}
+.title:hover span:nth-child(2) {
+  margin-left: 10px;
+}
+.title:hover span {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+.wrapText {
+  font-size: 22px;
+}
+
+.text {
+  padding-bottom: 20px;
+}
+ul {
+  list-style: inside square;
+}
+
+.list {
+  padding-bottom: 25px;
+}
+.titleList {
+  padding-bottom: 10px;
+}

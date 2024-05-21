@@ -1,0 +1,78 @@
+.form {
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: rgba(131, 58, 180, 1);
+  padding: 20px 25px 25px 25px;
+  width: 400px;
+  height: 100%;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  -webkit-box-shadow: -4px 8px 15px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 8px 15px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: -4px 8px 15px 8px rgba(0, 0, 0, 0.75);
+}
+
+.input {
+  border-radius: 4px;
+  border: none;
+  height: 100%;
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgba(230, 154, 47, 0.3479516806722689) 20%;
+  -webkit-box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
+}
+
+.input:focus,
+:hover {
+  outline: transparent;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 150px;
+  background-color: rgba(230, 154, 47, 0.3479516806722689) 20%;
+  -webkit-box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px 2px 25px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  color: rgba(131, 58, 180, 1);
+  font-weight: 600;
+}
+
+.btnWrapper {
+  text-align: center;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  padding-bottom: 35px;
+}
+.title {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+.labelEmail {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.labelPassw {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 10px;
+}

@@ -8,4 +8,5 @@
     rgba(252, 176, 69, 1) 100%
   );
   padding: 10px 30px;
+  justify-content: space-between;
 }

@@ -20,18 +20,25 @@ const LoginForm = () => {
       }}
       onSubmit={handleSubmit}
     >
-      <Form>
-        <label>
-          Email
-          <Field className={css.input} type="email" name="email" />
-        </label>
+      <Form className={css.form}>
+        <h2 className={css.title}>Please log in</h2>
+        <div className={css.inputWrapper}>
+          <label className={css.labelEmail}>
+            Email
+            <Field className={css.input} type="email" name="email" />
+          </label>
 
-        <label>
-          Password
-          <Field className={css.input} type="password" name="password" />
-        </label>
+          <label className={css.labelPassw}>
+            Password
+            <Field className={css.input} type="password" name="password" />
+          </label>
+        </div>
 
-        <button type="submit">Log in</button>
+        <div className={css.btnWrapper}>
+          <button className={css.btn} type="submit">
+            Log in
+          </button>
+        </div>
       </Form>
     </Formik>
   );

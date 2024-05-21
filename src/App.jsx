@@ -26,7 +26,7 @@ const App = () => {
   return isRefreshing ? (
     <p>Please wait...</p>
   ) : (
-    <Layout>
+    <Layout className={css.wrap}>
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<HomePage />} />
