@@ -14,7 +14,7 @@ const UserMenu = () => {
   return (
     <div className={css.wrap}>
       <p className={css.text}>
-        Welcome, <span className={css.name}>{user.name}</span>
+        Welcome, <span className={css.name}> {user.name}</span>
       </p>
       <button className={css.button} type="button" onClick={handleLogOut}>
         Logout

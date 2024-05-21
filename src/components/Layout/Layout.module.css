@@ -10,3 +10,15 @@
     rgba(131, 58, 180, 0.0006127450980392135) 96%
   );
 }
+
+@media screen and (min-width: 320px) {
+  .wrap {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .wrap {
+    text-align: left;
+  }
+}
