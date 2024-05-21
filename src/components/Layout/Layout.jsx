@@ -5,9 +5,7 @@ import { Toaster } from "react-hot-toast";
 const Layout = ({ children }) => {
   return (
     <div className={css.wrap}>
-      <section className={css.sectionHeader}>
-        <AppBar />
-      </section>
+      <AppBar />
       <section className={css.section}>{children}</section>
       <Toaster position="top-center" reverseOrder={false} />
     </div>
