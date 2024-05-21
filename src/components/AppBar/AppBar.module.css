@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  background: rgb(131, 58, 180);
   background: linear-gradient(
     207deg,
     rgba(131, 58, 180, 1) 0%,
