@@ -20,23 +20,30 @@ const RegistrationForm = () => {
       }}
       onSubmit={handleSubmit}
     >
-      <Form>
-        <label>
-          Name
-          <Field className={css.input} type="text" name="name" />
-        </label>
+      <Form className={css.form}>
+        <h2 className={css.title}>Register your account</h2>
+        <div className={css.inputWrapper}>
+          <label className={css.label}>
+            Name
+            <Field className={css.input} type="text" name="name" />
+          </label>
 
-        <label>
-          Email
-          <Field className={css.input} type="email" name="email" />
-        </label>
+          <label className={css.label}>
+            Email
+            <Field className={css.input} type="email" name="email" />
+          </label>
 
-        <label>
-          Password
-          <Field className={css.input} type="password" name="password" />
-        </label>
+          <label className={css.label}>
+            Password
+            <Field className={css.input} type="password" name="password" />
+          </label>
+        </div>
 
-        <button type="submit">Register</button>
+        <div className={css.btnWrapper}>
+          <button className={css.btn} type="submit">
+            Register
+          </button>
+        </div>
       </Form>
     </Formik>
   );
