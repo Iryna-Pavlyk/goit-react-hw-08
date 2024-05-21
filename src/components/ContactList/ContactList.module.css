@@ -5,8 +5,10 @@
 }
 .item {
   border: 1px solid rgb(230, 223, 223);
+  background-color: rgba(131, 58, 180, 1);
   border-radius: 6px;
   padding: 10px;
   width: 390px;
   height: 100%;
+  color: whitesmoke;
 }

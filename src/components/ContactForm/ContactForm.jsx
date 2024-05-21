@@ -47,6 +47,7 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         <Form className={css.form}>
+          <h3 className={css.title}>Add contact</h3>
           <div className={css.inputWrapper}>
             <label htmlFor={nameId}>Name</label>
             <Field

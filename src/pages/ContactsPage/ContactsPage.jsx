@@ -17,7 +17,6 @@ const ContactsPage = () => {
 
   return (
     <>
-      <h3 className={css.title}>Add contact</h3>
       <ContactForm />
       <SearchBox />
       {isLoading && <p>Request in progress...</p>}
